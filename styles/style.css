@@ -177,6 +177,16 @@ ul,a {
     flex-basis: 25%;
 }
 
+.skill-box:hover {
+    background: #fff;
+    color: #000;
+    border-radius: 6px;
+    border: 0.1em solid #000;
+    padding: 60px;
+    margin: 20px;
+    flex-basis: 25%;
+}
+
 /* services */
 
 .services .container {
@@ -225,7 +235,7 @@ ul,a {
 }
 
 .services-box:hover i{
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     background: #fff;
     color: #B1B493;
     padding: 20px;
@@ -249,6 +259,7 @@ ul,a {
 
 .banner .container {
     flex-direction: column;
+    width: 80%;
     margin: auto;
     color: #000;
     gap: 10px;

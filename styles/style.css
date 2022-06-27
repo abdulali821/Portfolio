@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,7 +14,11 @@ body{
 }
 
 img{
-    max-width: 40%;
+    width: 50%;
+}
+
+.btn:hover{
+    color: #fff;
 }
 
 ul,a {
@@ -67,16 +72,25 @@ ul,a {
 
 /* home */
 
-.home{
+#home{
     width: 100%;
+    background-image: url('/images/dp.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    
 }
 
-.home .container{
-    display: flex;
-    justify-content: space-between;
+#home .home-text h1{
+    font-size: 40px;
+}
+
+#home .home-text h3 {
+    font-size: 20px;
 }
 
 .home-text{
+    width: 60%;
     line-height: 1.2;
     display: flex;
     justify-content: center;
@@ -86,11 +100,13 @@ ul,a {
 }
 
 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    margin-top: 10px;
     background: #75775b;
+    border: 0px ; 
     border-radius: 4px;
-    padding: 10px;
     color: #fff;
 }
 
@@ -119,11 +135,12 @@ ul,a {
 
 /* about */
 
-.about {
+#about {
     width: 100%;
+    padding: 20px 0px 20px 0px;
 }
 
-.about .container{
+#about .container{
     display: flex;
     justify-content: space-between;
     gap: 100px;
@@ -157,15 +174,16 @@ ul,a {
 
 /* skills */
 
-.skills{
+#skills{
     width: 100%;
+    padding: 60px 0px 20px 0px;
     background: #fff;
 }
 
-.skills .container{
+#skills .container{
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    gap: 10px;
     text-align: center;
 }
 
@@ -199,11 +217,15 @@ ul,a {
 
 /* services */
 
-.services .container {
+#services {
+    width: 100%;
+    padding: 60px 0px 20px 0px;
+}
+
+#services .container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 60px;
+    gap: 10px;
     text-align: center;
 }
 
@@ -212,7 +234,6 @@ ul,a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    margin: 20px;
 }
 
 .services-box {
@@ -263,26 +284,29 @@ ul,a {
 
 .banner{
     width: 100%;
-    display: flex;
     margin: 20px 0px 20px 0px;
 }
 
 .banner .container {
-    flex-direction: column;
-    width: 80%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
     margin: auto;
     color: #000;
-    gap: 10px;
     padding: 30px;
 }
 
 /* Projects */
 
-.projects .container {
+#projects{
+    width: 100%;
+    padding: 60px 0px 20px 0px;
+}
+
+#projects .container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 60px;
+    gap: 10px;
     text-align: center;
 }
 
@@ -291,7 +315,6 @@ ul,a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    margin: 20px;
 }
 
 .projects-box {
@@ -321,4 +344,96 @@ ul,a {
     border-radius: 100%;
     margin-top: -100%;
     margin-bottom: 30px;
+}
+
+/* contact */
+
+#contact{
+    background: #fff;
+    color: #000;
+    width: 100%;
+    padding: 20px;
+}
+
+#contact .container{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#form-1{
+    display: flex;
+    gap: 10px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input{
+    height: 30px;
+}
+
+/* footer */
+
+#main-footer{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+
+    color: #fff;
+    padding: 20px;
+}
+
+@media(max-width: 800px){
+    .status ul{
+        display: block;
+    }
+    #home img{
+        display: none;
+    }
+    img{
+        background-size: contain;
+        width: 60%;
+    }
+}
+
+@media(max-width: 1050px) {
+    #about .container {
+        justify-content: start;
+            flex-direction: column;
+        }
+}
+
+@media(max-width: 935px) {
+    .home-text{
+        width: 100%;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .skill-box {
+        flex-basis: 100%;
+    }
+    .skill-box:hover{
+        flex-basis: 100%;
+    }
+    .services-box{
+        flex-basis: 100%;
+    }
+    .services-box:hover{
+        flex-basis: 100%;
+    }
+    .projects-box {
+        flex-basis: 100%;
+    }
+    .projects-box:hover{
+        flex-basis: 100%;
+    }
 }

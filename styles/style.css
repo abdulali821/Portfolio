@@ -18,7 +18,10 @@ img{
 }
 
 .btn:hover{
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #000;
 }
 
 ul,a {
@@ -30,12 +33,25 @@ ul,a {
 }
 
 .container{
+    height: 100%;
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
 /* navbar */
+
+#toggle{
+    display: none;
+}
+
+.tgl{
+    display: none;
+}
+
+#toggleSlide{
+    display: none;
+}
 
 .navbar{
     position: fixed;
@@ -387,7 +403,6 @@ input{
     text-align: center;
     width: 100%;
     background-color: #000;
-
     color: #fff;
     padding: 20px;
 }
@@ -410,10 +425,29 @@ input{
 }
 
 @media(max-width: 935px) {
+    #toggle{
+        display: block;
+        margin-right: 50px;
+        background-color: #000;
+        color: #fff;
+    }
+    #toggleSlide {
+        margin-top: 295px;
+        position: absolute;
+    }
+    #toggleSlide li{
+        text-align: center;
+        background: rgba(0, 0, 0, 0.863);
+        color: #fff;
+        padding: 5px 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
     .home-text{
         width: 100%;
     }
-    .navbar ul{
+    .navbar ul li{
         display: none;
     }
     .skill-box {

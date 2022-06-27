@@ -32,6 +32,7 @@ ul,a {
 .container{
     width: 80%;
     margin: auto;
+    overflow: hidden;
 }
 
 /* navbar */
@@ -394,9 +395,6 @@ input{
 @media(max-width: 800px){
     .status ul{
         display: block;
-    }
-    #home img{
-        display: none;
     }
     img{
         background-size: contain;

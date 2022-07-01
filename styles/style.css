@@ -58,6 +58,7 @@ ul,a {
     background: #000;
     width: 100%;
     height: 80px;
+    z-index: 1000;
 }
 
 .navbar .logo{
@@ -258,6 +259,7 @@ ul,a {
 }
 
 .services-box {
+    transition: 1s;
     background: #fff;
     color: #000;
     border-radius: 6px;
@@ -267,16 +269,15 @@ ul,a {
     flex-basis: 25%;
 }
 
-.services-box i {
-    background: #B1B493;
-    color: #fff;
-    padding: 20px;
-    border-radius: 100%;
-    margin-top: -100%;
-    margin-bottom: 30px;
+.services-box h3 {
+}
+
+.services-box p {
 }
 
 .services-box:hover{
+    transform: rotatey(180deg);
+    transition: 1s;
     background: #000;
     color: #fff;
     border-radius: 6px;
@@ -286,14 +287,14 @@ ul,a {
     flex-basis: 25%;
 }
 
-.services-box:hover i{
-    transition-duration: 0.5s;
-    background: #fff;
-    color: #B1B493;
-    padding: 20px;
-    border-radius: 100%;
-    margin-top: -100%;
-    margin-bottom: 30px;
+.services-box:hover h3{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.services-box:hover p {
+    transform: rotateY(180deg);
+    transition: 1s;
 }
 
 /* banner contact */

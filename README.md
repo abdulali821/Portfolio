@@ -1,3 +1,3 @@
 # Portfolio
 Abdul Ali's Portfolio
-[Portfolio link]=(https://iamabdulali.netlify.app)
+https://iamabdulali.netlify.app

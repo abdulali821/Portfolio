@@ -228,6 +228,8 @@ ul,a {
 }
 
 .skill-box:hover {
+    transform: rotateY(180deg);
+    transition: 1s;
     background: #fff;
     color: #000;
     border-radius: 6px;
@@ -235,6 +237,16 @@ ul,a {
     padding: 60px;
     margin: 20px;
     flex-basis: 25%;
+}
+
+.skill-box:hover h2 {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.skill-box:hover span {
+    transform: rotateY(180deg);
+    transition: 1s;
 }
 
 /* services */
@@ -259,7 +271,6 @@ ul,a {
 }
 
 .services-box {
-    transition: 1s;
     background: #fff;
     color: #000;
     border-radius: 6px;
@@ -267,12 +278,6 @@ ul,a {
     padding: 50px;
     margin: 20px;
     flex-basis: 25%;
-}
-
-.services-box h3 {
-}
-
-.services-box p {
 }
 
 .services-box:hover{
@@ -350,6 +355,8 @@ ul,a {
 }
 
 .projects-box:hover {
+    transform: rotateY(180deg);
+    transition: 1s;
     background: #000;
     color: #fff;
     border-radius: 6px;
@@ -359,13 +366,14 @@ ul,a {
     flex-basis: 25%;
 }
 
-.projects-boxes i {
-    background: #B1B493;
-    color: #fff;
-    padding: 20px;
-    border-radius: 100%;
-    margin-top: -100%;
-    margin-bottom: 30px; 
+.projects-box:hover h3 {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.projects-box:hover p {
+    transform: rotateY(180deg);
+    transition: 1s;
 }
 
 /* contact */

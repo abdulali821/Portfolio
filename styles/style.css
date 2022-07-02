@@ -439,7 +439,7 @@ input{
 
 @media(max-width: 935px) {
     #typewriter{
-        font-size: 50px;
+        font-size: 28px;
     }
     #toggle{
         display: block;

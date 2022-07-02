@@ -438,6 +438,9 @@ input{
 }
 
 @media(max-width: 935px) {
+    #typewriter{
+        font-size: 50px;
+    }
     #toggle{
         display: block;
         margin-right: 50px;

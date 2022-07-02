@@ -435,15 +435,15 @@
             <p>
                 Feel free to get in touch with me if you have any questions. I am looking forward to working with you!
             </p>
-            <form class=".form">
+            <form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
                 <div id="form-1">
-                    <input type="text" id="name" placeholder="Your Name" style="padding-left: 2px; width: 100%;">
-                    <input type="email" id="email" placeholder="Your Email" style="padding-left: 2px; width: 100%;">
+                    <input type="text" name="name" id="name" placeholder="Your Name" style="padding-left: 2px; width: 100%;">
+                    <input type="email" name="email" id="email" placeholder="Your Email" style="padding-left: 2px; width: 100%;">
                 </div>
-                <input type="text" id="subject" placeholder="Subject" style="padding-left: 2px; width: 100%;">
-                <textarea type="text" id="msg" rows="4" cols="21" style="resize: none; padding-left: 2px; width: 100%;"
+                <input type="text" name="subject" id="subject" placeholder="Subject" style="padding-left: 2px; width: 100%;">
+                <textarea type="text" name="message" id="msg" rows="4" cols="21" style="resize: none; padding-left: 2px; width: 100%;"
                     placeholder="Message"></textarea><br>
-                <input type="button" class="btn" value="Send Message">
+                <input type="submit" class="btn" value="Send Message">
             </form>
         </div>
     </section>

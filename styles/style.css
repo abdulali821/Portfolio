@@ -447,15 +447,9 @@ input{
 }
 
 @media(max-width: 935px) {
-<<<<<<< HEAD
     #typewriter {
         font-size: 50px;
         }
-=======
-    #typewriter{
-        font-size: 28px;
-    }
->>>>>>> fd3fbc2fe3d8bcf1faefa12053823919b13159a9
     #toggle{
         display: block;
         margin-right: 50px;

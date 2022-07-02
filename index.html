@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/type.css">
     <title>Abdul Ali.</title>
 </head>
 
@@ -46,12 +47,11 @@
     <div id="home">
         <div class="container">
             <section class="home-text">
-                <h3>
+                <h2>
                     HELLO! THIS IS ALI 👋
-                </h3>
-                <h1>
-                    Creative App & Frontend Developer
-                </h1><br>
+                </h2>
+                <h3 id="typewriter" style="color: #fff; font-size: 60px;">
+                </h3><br>
                 <button class="btn" style="padding: 10px;">Hire me</button>
             </section>
         </div>
@@ -178,9 +178,9 @@
             <h1 style="color: #000; font-weight: bold; font-size: 34px;">
                 My skills
             </h1>
-            <p style="color: #000;">
+            <h4 style="color: #000;">
                 🛠 JavaScript, Firebase, Flutter, React JS, SCSS, Bootstrap.
-            </p>
+            </h4>
             <section class="skill-boxes">
                 <div class="skill-box">
                     <h2>
@@ -320,9 +320,11 @@
             <p>
                 Feel free to get in touch with me if you have any questions. I am looking forward to working with you!
             </p>
-            <button class="btn" style="padding: 10px;">
-                Contact me
-            </button>
+            <a href="#contact">
+                <button class="btn" style="padding: 10px;">
+                    Contact me
+                </button>
+            </a>
         </div>
     </section>
 
@@ -340,7 +342,7 @@
                 Some amazing projects i have done it!
             </p>
             <div class="projects-boxes">
-                <div class="projects-box">
+                <a  href="https://iamabdulali.netlify.app" target="_blank"   class="projects-box">
                     <div class="text">
                         <h3>
                             Portfolio
@@ -349,8 +351,8 @@
                             That's my personal portfolio using HTML,CSS
                         </p>
                     </div>
-                </div>
-                <div class="projects-box">
+                </a>
+                <a  href="https://github.com/abdulali821/taap_n" target="_blank"   class="projects-box">
                     <div class="text">
                         <h3>
                             TAAP-N Application
@@ -359,8 +361,8 @@
                             This project is for american based company using Flutter Technology
                         </p>
                     </div>
-                </div>
-                <div class="projects-box">
+                </a>
+                <a  href="https://acmes.netlify.app" target="_blank"   class="projects-box">
                     <div class="text">
                         <h3>
                             ACME Website
@@ -369,8 +371,8 @@
                             That's the project i have done it from Online course!
                         </p>
                     </div>
-                </div>
-                <div class="projects-box">
+                </a>
+                <a  href="https://github.com/abdulali821/Calculator" target="_blank"   class="projects-box">
                     <div class="text">
                         <h3>
                             Calculator
@@ -379,8 +381,8 @@
                             I have develope this calculator using react.js
                         </p>
                     </div>
-                </div>
-                <div class="projects-box">
+                </a>
+                <a href="https://github.com/abdulali821/Mini-project" target="_blank"  class="projects-box">
                     <div class="text">
                         <h3>
                             Mini-Software House
@@ -389,8 +391,8 @@
                             That was my first semester project using c++
                         </p>
                     </div>
-                </div>
-                <div class="projects-box">
+                </a>
+                <a href="https://github.com/abdulali821/slame_it" target="_blank" class="projects-box">
                     <div class="text">
                         <h3>
                             Slame-it
@@ -399,8 +401,8 @@
                             This project is for indian based company using Flutter Technology
                         </p>
                     </div>
-                </div>
-                <div class="projects-box">
+                </a>
+                <a href="https://github.com/abdulali821/guna-fm" target="_blank" class="projects-box">
                     <div class="text">
                         <h3>
                             Guna FM
@@ -409,8 +411,8 @@
                             This project is for indian based company using Flutter Technology
                         </p>
                     </div>
-                </div>
-                <a href="https://github.com/abdulali821/pocket_recipe" class="projects-box">
+                </a>
+                <a href="https://github.com/abdulali821/pocket_recipe" target="_blank" class="projects-box">
                     <div class="text">
                         <h3>
                             Pocket Recipe
@@ -459,6 +461,14 @@
 
     <!-- scripts -->
     <script src="scripts/app.js">
+    </script>
+    <script src='/scripts/dist/core.js'></script>
+    <script type="text/javascript">
+        const instance = new Typewriter('#typewriter', {
+            strings: ['Developer', 'Programmer', 'CS undergrad', 'Gamer'],
+            autoStart: true,
+            loop: true,
+        });
     </script>
 </body>
 

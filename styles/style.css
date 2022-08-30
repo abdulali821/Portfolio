@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: #000;
     color: #fff;
     font-size: 16px;
@@ -13,18 +13,19 @@ body{
     line-height: 1.5;
 }
 
-img{
+img {
     width: 50%;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #fff;
     color: #000;
     cursor: pointer;
     border: 1px solid #000;
 }
 
-ul,a {
+ul,
+a {
     color: #fff;
     list-style-type: none;
     text-decoration: none;
@@ -32,7 +33,7 @@ ul,a {
     font-weight: bold;
 }
 
-.container{
+.container {
     height: 100%;
     width: 80%;
     margin: auto;
@@ -41,19 +42,19 @@ ul,a {
 
 /* navbar */
 
-#toggle{
+#toggle {
     display: none;
 }
 
-.tgl{
+.tgl {
     display: none;
 }
 
-#toggleSlide{
+#toggleSlide {
     display: none;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     background: #000;
     width: 100%;
@@ -61,45 +62,45 @@ ul,a {
     z-index: 1000;
 }
 
-.navbar .logo{
+.navbar .logo {
     position: fixed;
     font-size: x-large;
 }
 
-.navbar .container{
+.navbar .container {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar ul{
+.navbar ul {
     position: fixed;
     width: 90%;
     display: flex;
     justify-content: end;
 }
 
-.navbar ul li{
+.navbar ul li {
     margin-right: 40px;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     color: rgba(255, 0, 0, 0.661);
 }
 
 /* home */
 
-#home{
+#home {
     width: 100%;
     background-image: url('/images/dp.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    
+
 }
 
-#home .home-text h1{
+#home .home-text h1 {
     font-size: 40px;
 }
 
@@ -107,7 +108,7 @@ ul,a {
     font-size: 20px;
 }
 
-#typewriter{
+#typewriter {
     font-size: 70px;
     background: #475057;
     background: linear-gradient(to right, #93a5cf 0%, #e4efe9 100%);
@@ -116,7 +117,7 @@ ul,a {
     -webkit-text-fill-color: transparent;
 }
 
-.home-text{
+.home-text {
     width: 60%;
     line-height: 1.2;
     display: flex;
@@ -126,32 +127,32 @@ ul,a {
     height: 100vh;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     background: #75775b;
-    border: 0px ; 
+    border: 0px;
     border-radius: 4px;
     color: #fff;
 }
 
 /* status */
 
-.status{
+.status {
     background: #fff;
     width: 100%;
 }
 
-.status ul{
-    display: flex; 
+.status ul {
+    display: flex;
     color: #000;
     justify-content: space-between;
     padding: 40px 0px 40px 0px;
 }
 
-.status ul li{
+.status ul li {
     display: flex;
     flex-direction: column;
 }
@@ -167,20 +168,20 @@ ul,a {
     padding: 20px 0px 20px 0px;
 }
 
-#about .container{
+#about .container {
     display: flex;
     justify-content: space-between;
     gap: 100px;
 }
 
-.about-text{
+.about-text {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.information{
+.information {
     display: flex;
     justify-content: space-between;
 }
@@ -192,7 +193,7 @@ ul,a {
     align-items: flex-start;
 }
 
-.information .end{
+.information .end {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -205,20 +206,20 @@ ul,a {
 
 /* skills */
 
-#skills{
+#skills {
     width: 100%;
     padding: 60px 0px 20px 0px;
     background: #fff;
 }
 
-#skills .container{
+#skills .container {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
 }
 
-.skill-boxes{
+.skill-boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -253,7 +254,7 @@ ul,a {
     transition: 1s;
 }
 
-.skill-box:hover span {
+.skill-box:hover h1 {
     transform: rotateY(180deg);
     transition: 1s;
 }
@@ -289,7 +290,7 @@ ul,a {
     flex-basis: 25%;
 }
 
-.services-box:hover{
+.services-box:hover {
     transform: rotatey(180deg);
     transition: 1s;
     background: #000;
@@ -301,7 +302,7 @@ ul,a {
     flex-basis: 25%;
 }
 
-.services-box:hover h3{
+.services-box:hover h3 {
     transform: rotateY(180deg);
     transition: 1s;
 }
@@ -318,7 +319,7 @@ ul,a {
     width: 100%;
 }
 
-.banner{
+.banner {
     width: 100%;
     margin: 20px 0px 20px 0px;
 }
@@ -334,12 +335,12 @@ ul,a {
 
 /* Projects */
 
-#projects{
+#projects {
     width: 100%;
     padding: 60px 0px 20px 0px;
 }
 
-#projects .container{
+#projects .container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -387,39 +388,39 @@ ul,a {
 
 /* contact */
 
-#contact{
+#contact {
     background: #fff;
     color: #000;
     width: 100%;
     padding: 20px;
 }
 
-#contact .container{
+#contact .container {
     gap: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-#form-1{
+#form-1 {
     display: flex;
     gap: 10px;
 }
 
-form{
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-input{
+input {
     height: 30px;
 }
 
 /* footer */
 
-#main-footer{
+#main-footer {
     font-size: large;
     font-weight: bold;
     text-align: center;
@@ -429,11 +430,12 @@ input{
     padding: 20px;
 }
 
-@media(max-width: 800px){
-    .status ul{
+@media(max-width: 800px) {
+    .status ul {
         display: block;
     }
-    img{
+
+    img {
         background-size: contain;
         width: 60%;
     }
@@ -442,25 +444,28 @@ input{
 @media(max-width: 1050px) {
     #about .container {
         justify-content: start;
-            flex-direction: column;
-        }
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 935px) {
     #typewriter {
         font-size: 50px;
-        }
-    #toggle{
+    }
+
+    #toggle {
         display: block;
         margin-right: 50px;
         background-color: #000;
         color: #fff;
     }
+
     #toggleSlide {
         margin-top: 295px;
         position: absolute;
     }
-    #toggleSlide li{
+
+    #toggleSlide li {
         text-align: center;
         background: rgba(0, 0, 0, 0.863);
         color: #fff;
@@ -469,28 +474,36 @@ input{
         display: flex;
         flex-direction: column;
     }
-    .home-text{
+
+    .home-text {
         width: 100%;
     }
-    .navbar ul li{
+
+    .navbar ul li {
         display: none;
     }
+
     .skill-box {
         flex-basis: 100%;
     }
-    .skill-box:hover{
+
+    .skill-box:hover {
         flex-basis: 100%;
     }
-    .services-box{
+
+    .services-box {
         flex-basis: 100%;
     }
-    .services-box:hover{
+
+    .services-box:hover {
         flex-basis: 100%;
     }
+
     .projects-box {
         flex-basis: 100%;
     }
-    .projects-box:hover{
+
+    .projects-box:hover {
         flex-basis: 100%;
     }
 }
